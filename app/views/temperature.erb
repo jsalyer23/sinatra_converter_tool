@@ -1,0 +1,40 @@
+<div>
+	<div class="title">
+		<p>Temperature</p>
+	</div>
+
+	<% if @input != 0 %>
+
+
+		<div class="results">
+			From: <%= @type.capitalize %>
+		</div>
+
+		<div class="results">
+			Before: <%= @input %>
+		</div>
+
+		<div class="results">
+			Converted To: <%= @converted_to %>
+		</div>
+
+		<div class="results">
+			After: <%= @conversion %>
+		</div>
+
+	<% else %>
+
+		<div class="form">
+			<form action="/temperature<%= @type %>">
+				<select name="temperature">
+					<option value="fahrenheit">Fahrenheit</option>
+					<option value="celcius">Celcius</option>
+				</select>
+				To Convert:<input type="text" name="input" />
+				<input type="submit" value="Submit"/>
+			</form>
+		</div>
+
+	<% end %>
+
+</div>

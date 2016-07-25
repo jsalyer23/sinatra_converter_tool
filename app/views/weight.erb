@@ -1,0 +1,46 @@
+<div>
+	<div class="title">
+		<p>Weight</p>
+	</div>
+
+	<% if @input != 0 %>
+
+
+		<div class="results">
+			From: <%= @type.capitalize %>
+		</div>
+
+		<div class="results">
+			Before: <%= @input %>
+		</div>
+
+		<div class="results">
+			Converted To: <%= @converted_to %>
+		</div>
+
+		<div class="results">
+			After: <%= @conversion %>
+		</div>
+
+	<% else %>
+
+		<div class="form">
+			<form action="/weight<%= @type %>">
+				From:<select name="weight">
+					<option value="pounds">Pounds</option>
+					<option value="kilograms">Kilograms</option>
+					<option value="stones">Stones</option>
+				</select>
+				To:<select name="convert_to">
+					<option value="pounds">Pounds</option>
+					<option value="kilograms">Kilograms</option>
+					<option value="stones">Stones</option>
+				</select>
+				To Convert:<input type="text" name="input" />
+				<input type="submit" value="Submit"/>
+			</form>
+		</div>
+
+	<% end %>
+
+</div>

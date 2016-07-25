@@ -1,0 +1,65 @@
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+}
+
+.welcome {
+	display: flex;
+	font-size: 40px;
+}
+
+.title {
+	display: flex;
+	font-size: 40px;
+	justify-content: center;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.nav__link {
+	padding-left: 40px;
+	margin-left: 50px;
+	list-style-type: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.results {
+	display: flex;
+}
+
+.form {
+	margin-top: 100px;
+	border: 1px solid black;
+}
+
+.home__link {
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	flex-direction: row;
+	padding: 10px;
+}
+
+.welcome__text {
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+}
+
+.welcomeContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
